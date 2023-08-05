@@ -109,7 +109,7 @@ int readDictionary(char* filename, char** pInWords) {
 int main(void) {
     char* inWords[256];
     // Read the number of the words in the dictionary
-    int numWords = readDictionary("/uploads/dictionary.txt", inWords);
+    int numWords = readDictionary("dictionary.txt", inWords);
     for (int i = 0; i < numWords; ++i) {
         printf("%s\n", inWords[i]);
     }
